@@ -32,7 +32,6 @@ export function Home(){
                     Каждый курс включает в себя разнообразные предметы, которые помогут вам глубже понять предмет и подготовят вас к реальным вызовам в профессиональной среде. Выбирайте предметы, которые соответствуют вашим интересам и целям!
                     </p>
                     <ButtonCourse/>
-                    <button className={styles.button_course}>Выбери курс</button>
                 </div>
                 <div className={styles.main__image}>
                     <img className={styles.image_main} src="Illustration.svg" alt="" />
