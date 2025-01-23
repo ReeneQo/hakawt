@@ -1,6 +1,6 @@
 import { Github } from 'lucide-react';
 import styles from './home.module.css'
-
+import {ButtonCourse} from '../components/ButtonCourse/ButtonCourse.jsx'
 export function Home(){
     return <div>
         <header>
@@ -24,7 +24,7 @@ export function Home(){
                     <p className={styles.main_text}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nisi veritatis aliquid. Obcaecati, veniam, error quasi molestias repellat voluptates numquam totam libero sint nostrum, hic quam vitae excepturi architecto provident!
                     </p>
-                    <button className={styles.button_course}>Выбери курс</button>
+                    <ButtonCourse/>
                 </div>
                 <div>
                     <img className={styles.image_main} src="Illustration.svg" alt="" />
