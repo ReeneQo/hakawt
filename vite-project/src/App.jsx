@@ -1,5 +1,5 @@
 import './App.css';
-import { Home } from './pages/Home.jsx'
+import { Home } from './header/Home.jsx'
 
 export function App() {
   return (
