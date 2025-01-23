@@ -1,6 +1,7 @@
 import { Github } from 'lucide-react';
 import styles from './home.module.css'
 import { Link } from 'react-router-dom';
+import {ButtonCourse} from '../components/ButtonCourse/ButtonCourse.jsx'
 
 export function Home(){
     const handleButtonClick = () => {
@@ -30,6 +31,7 @@ export function Home(){
                     <p className={styles.main_text}>
                     Каждый курс включает в себя разнообразные предметы, которые помогут вам глубже понять предмет и подготовят вас к реальным вызовам в профессиональной среде. Выбирайте предметы, которые соответствуют вашим интересам и целям!
                     </p>
+                    <ButtonCourse/>
                     <button className={styles.button_course}>Выбери курс</button>
                 </div>
                 <div className={styles.main__image}>
