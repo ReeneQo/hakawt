@@ -1,8 +1,6 @@
-import { Github, Link } from 'lucide-react';
+import { Github } from 'lucide-react';
 import styles from './home.module.css'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-    
-
+import { Link } from 'react-router-dom';
 
 export function Home(){
     const handleButtonClick = () => {
@@ -14,9 +12,9 @@ export function Home(){
             <img className={styles.posimg} src='/Logo.svg' alt="" />
             <nav className={styles.nav}>
                 <ul className={styles.spisok}>
-                    <li className={styles.li}>Home</li>
-                    <li className={styles.li}>About us</li>
-                    <li className={styles.li}>Developers</li>
+                    <li className={styles.li}><Link to='/'>Home</Link></li>
+                    <li className={styles.li}><Link to='/About'>About us</Link></li>
+                    <li className={styles.li}><Link to='/Developers'>Developers</Link></li>
                 </ul>
                 <button className={styles.button} onClick={handleButtonClick}> <Github/> GitHub </button> 
             </nav>
@@ -40,3 +38,4 @@ export function Home(){
         </section>
     </div>
 }
+
