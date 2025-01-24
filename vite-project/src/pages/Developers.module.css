@@ -1,9 +1,18 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+html,body {
     height: 100%;
+    margin: 0;
+}
+
+.body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh; 
 }
 
 .card_general {
-    height: 100%;
+    min-height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -18,6 +27,7 @@ html {
     margin: 50px auto 50px auto;
     padding-top: 20px;
 }
+
 
 .card_container {
     display: flex;
@@ -47,11 +57,12 @@ html {
     position: relative;
 }
 
-
 .git_button {
     position: absolute;
     right: 8%;
     bottom: 80%;
+    background: #B9FF66;
+    border: 1px solid black;
 }
 
 h4 {

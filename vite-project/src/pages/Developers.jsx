@@ -7,6 +7,7 @@ import {Footer} from "../footer/footer.jsx"
 
 const Developers = () => {
     return (
+    <div className={style.body}>
     <div className={styles.card_general}>
         <header>
             <div className={style.head}>
@@ -50,7 +51,7 @@ const Developers = () => {
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
         <button className={styles.git_button} onClick={() => window.open('https://github.com/ierumi', '_blank')}><Github/></button>
-        <p>About you</p>
+        <p>-10% code writing</p>
        </div>
        </div>
 
@@ -74,7 +75,13 @@ const Developers = () => {
         <p>About you</p>
        </div>
        </div>
-       <h1 className={styles.h1_dev}>Developers</h1>
+
+    </div>
+
+       <div className={style.foot}>
+            <h1 className={styles.h1_dev}>Developers</h1>
+       </div>
+    
     </div>
     )
 };
