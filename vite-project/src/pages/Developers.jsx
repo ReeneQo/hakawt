@@ -29,7 +29,7 @@ const Developers = () => {
         <div className={styles.card_container}>
        <div className={styles.card_main}>
        <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
-        <h4>Artem (Nickname) Gorbunov</h4>
+        <h4>Artem (clevergg) Gorbunov</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
         <button className={styles.git_button}><Github/></button>
@@ -39,7 +39,7 @@ const Developers = () => {
        
        <div className={styles.card_main}>
        <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
-        <h4>Dmitriy (Nickname) Zelenin</h4>
+        <h4>Dmitriy (rennee) Zelenin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
         <button className={styles.git_button}><Github/></button>
@@ -48,7 +48,7 @@ const Developers = () => {
        
        <div className={styles.card_main}>
        <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
-        <h4>Stepan (Nickname) Starostin</h4>
+        <h4>Stepan (ierumi) Starostin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
         <button className={styles.git_button}><Github/></button>
@@ -60,7 +60,7 @@ const Developers = () => {
 
        <div className={styles.card_main}>
        <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
-        <h4>Valeriy (Nickname) Erushev</h4>
+        <h4>Valeriy (valeron) Erushev</h4>
         <p className={styles.card_text}>Captian, CEO</p>
         <hr></hr>
         <button className={styles.git_button}><Github/></button>
@@ -69,7 +69,7 @@ const Developers = () => {
 
        <div className={styles.card_main}>
        <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
-        <h4>Kirill (Nickname) Litavrin</h4>
+        <h4>Kirill (SAGZZad) Litavrin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
         <button className={styles.git_button}><Github/></button>
