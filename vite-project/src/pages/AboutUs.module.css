@@ -1,24 +1,27 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 .about_h1 {
-    font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
+    font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
     background-color: #b9ff66;
     border-radius: 7px;
     white-space: pre;
-    width: 16%;
     padding: 10px;
 }
 
-.about_image {
-    height: 700px;
-    width: 650px;
+.abzac1 {
+    margin: 25px 0 15px 0;
+}
+
+.abzac {
+    margin: 15px 0;
 }
 
 .about_text {
     padding: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    font-size: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+    font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
     max-width: 1300px;
 }
 
