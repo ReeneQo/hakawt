@@ -26,7 +26,7 @@ const Developers = () => {
 
         <div className={styles.card_container}>
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
+       <img className={styles.card_image} src="/inkognito.svg" alt="" />
         <h4>Artem (clevergg) Gorbunov</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
@@ -36,7 +36,7 @@ const Developers = () => {
 
        
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
+       <img className={styles.card_image} src="/inkognito.svg" alt="" />
         <h4>Dmitriy (rennee) Zelenin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
@@ -45,7 +45,7 @@ const Developers = () => {
        </div>
        
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
+       <img className={styles.card_image} src="/inkognito.svg" alt="" />
         <h4>Stepan (ierumi) Starostin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>
@@ -57,7 +57,7 @@ const Developers = () => {
        <div className={styles.card_container2}>
 
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
+       <img className={styles.card_image} src="/inkognito.svg" alt="" />
         <h4>Valeriy (valeron) Erushev</h4>
         <p className={styles.card_text}>Captian, CEO</p>
         <hr></hr>
@@ -66,7 +66,7 @@ const Developers = () => {
        </div>
 
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="./public/inkognito.svg" alt="" />
+       <img className={styles.card_image} src="/inkognito.svg" alt="" />
         <h4>Kirill (SAGZZad) Litavrin</h4>
         <p className={styles.card_text}>Developer</p>
         <hr></hr>

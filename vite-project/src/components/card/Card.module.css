@@ -1,20 +1,217 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 3px 1px black;
+    background-color: #F3F3F3;
+    
+}
+
+.card__white__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
 .text {
-    font-size: 20px;
+    background-color: #B9FF66;
+    display: block;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 800;
+    white-space: pre;
+    margin: 0;
+    padding: 7px;
+    width: 220px;
+    font-family: 'PT Sans';
+}
+
+.p {
+    background-color: #B9FF66;
+    display: block;
+    border-radius: 10px;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    padding: 7px;
+    width: 200px;
+    font-weight: 800;
+    font-family: 'PT Sans';
+}
+
+.white_target {
+    margin-top: 37px;
+}
+
+.span__white {
+    display: flex;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .card__main {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 600px);
     gap: 20px; 
     padding: 1px;
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
+    
 }
 
-.card {
+.card__black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #191A23;
     border: 1px solid black;
-    width: 350px;
-    height: 150px;
+    border-radius: 45px;
+    width: 600px;
+    height: 310px;
+    box-shadow: 0px 3px 1px black;
+    
+}
+
+.card__black__content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.text__black {   
+    background-color: white;
+    display: block;
     border-radius: 10px;
-    box-shadow: 0px 3px 1px black
+    font-size: 35px;
+    font-weight: 800;
+    white-space: pre;
+    margin: 0;
+    padding: 7px;
+    width: 210px;
+    font-family: 'PT Sans';
+}
+
+.p__black {
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    padding: 7px;
+    width: 175px;
+    font-weight: 800;
+    font-family: 'PT Sans';
+}
+
+.span__black {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.target {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.black_target {
+    margin-top: 37px;
+}
+
+.black__image {
+    margin: 0 20px;
+}
+
+.card__green {
+    background: #B9FF66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    width: 600px;
+    height: 310px;
+    box-shadow: 0px 3px 1px black;
+}
+
+.card__green__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.text__green {
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 800;
+    white-space: pre;
+    margin: 0;
+    padding: 7px;
+    width: 210px;
+    font-family: 'PT Sans';
+}
+
+.p__green {
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    padding: 7px;
+    width: 175px;
+    font-weight: 800;
+    font-family: 'PT Sans';
+}
+
+.green_target {
+    margin-top: 37px;
+}
+
+.span__green {
+    display: flex;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.green__image {
+    margin: 0 20px;
+}
+
+.card__green1{
+    background: #B9FF66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    width: 600px;
+    height: 310px;
+    box-shadow: 0px 3px 1px black;
 }
