@@ -22,56 +22,63 @@ const Developers = () => {
             </div>
         </header>
 
-
         <div className={styles.card_container}>
-       <div className={styles.card_main}>
-       <img className={styles.card_image} src="/inkognito.svg" alt="" />
-        <h4>Artem (clevergg) Gorbunov</h4>
-        <p className={styles.card_text}>Developer</p>
-        <hr></hr>
-        <button className={styles.git_button} onClick={() => window.open('https://github.com/clevergg', '_blank')}><Github/></button>
-        <p>About you</p>
-       </div>
+
+            <div className={styles.card_main}>
+                <div className={styles.names}>
+                    <img className={styles.card_image} src="/inkognito.svg" alt="" />
+                    <span className={styles.card_text}>Artem (clevergg) Gorbunov Developer</span>
+                    <button className={styles.git_button} onClick={() => window.open('https://github.com/clevergg', '_blank')}><Github/></button>
+                </div>
+                <hr></hr>
+                <span>About you</span>
+            </div>
 
        
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="/inkognito.svg" alt="" />
-        <h4>Dmitriy (rennee) Zelenin</h4>
-        <p className={styles.card_text}>Developer</p>
-        <hr></hr>
-        <button className={styles.git_button} onClick={() => window.open('https://github.com/ReeneQo', '_blank')}><Github/></button>
-        <p>About you</p>
+                <div className={styles.names}>
+                    <img className={styles.card_image} src="/inkognito.svg" alt="" />
+                    <span className={styles.card_text}>Dmitriy (RENEE) Zelenin Developer</span>
+                    <button className={styles.git_button} onClick={() => window.open('https://github.com/ReeneQo', '_blank')}><Github/></button>
+                </div>
+            <hr></hr>
+            <span>About you</span>
        </div>
        
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="/inkognito.svg" alt="" />
-        <h4>Stepan (ierumi) Starostin</h4>
-        <p className={styles.card_text}>Developer</p>
-        <hr></hr>
-        <button className={styles.git_button} onClick={() => window.open('https://github.com/ierumi', '_blank')}><Github/></button>
-        <p>-10% code writing</p>
-       </div>
+                <div className={styles.names}>
+                    <img className={styles.card_image} src="/inkognito.svg" alt="" />
+                    <span className={styles.card_text}>Stepan (ierumi) Starostin Developer</span>
+                    <button className={styles.git_button} onClick={() => window.open('https://github.com/ierumi', '_blank')}><Github/></button>
+                </div>
+            <hr></hr>
+            <span>-10% code writing</span>
+        </div>
+
        </div>
 
        <div className={styles.card_container2}>
 
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="/inkognito.svg" alt="" />
-        <h4>Valeriy (valeron) Erushev</h4>
-        <p className={styles.card_text}>Captian, CEO</p>
-        <hr></hr>
-        <button className={styles.git_button} onClick={() => window.open('https://github.com/valeron1380', '_blank')}><Github/></button>
-        <p>0% code writing</p>
+                <div className={styles.names}>
+                    <img className={styles.card_image} src="/inkognito.svg" alt="" />
+                    <span className={styles.card_text}> Valeriy (valeron) Erushev Captain CEO </span>
+                    <button className={styles.git_button} onClick={() => window.open('https://github.com/valeron1380', '_blank')}><Github/></button>
+                </div>
+            <hr></hr>
+            <span>0% code writing</span>
        </div>
 
        <div className={styles.card_main}>
-       <img className={styles.card_image} src="/inkognito.svg" alt="" />
-        <h4>Kirill (SAGZZad) Litavrin</h4>
-        <p className={styles.card_text}>Developer</p>
-        <hr></hr>
-        <button className={styles.git_button} onClick={() => window.open('https://github.com/SAGZZad', '_blank')}><Github/></button>
-        <p>About you</p>
+                <div className={styles.names}>
+                    <img className={styles.card_image} src="/inkognito.svg" alt="" />
+                    <span className={styles.card_text}> Kirill (SAGZZad) Litavrin Developer </span>
+                    <button className={styles.git_button} onClick={() => window.open('https://github.com/SAGZZad', '_blank')}><Github/></button>
+                </div>
+            <hr></hr>
+            <span>About you</span>
        </div>
+
        </div>
 
     </div>
