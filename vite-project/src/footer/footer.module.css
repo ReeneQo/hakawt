@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
     font-family: 'Space Grotesk';
 }
@@ -5,8 +7,9 @@
 .footer_main {
     background-color: #191A23;
     color: white;
-    padding: 50px;
-    margin-top: 100px
+    margin-top: 100px;
+    width: 100%;
+    min-width: 100%;
 }
 
 .form_email {
@@ -18,44 +21,27 @@
     margin: 50px;
   }
 
-  input[type="email"] {
-    width: 200px;
-    padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: #292A32;
-    color: #fff;
-    margin-top: 10%;
-    margin-left: 10%;
-    
-  }
-
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #b9ff66;
-    color: #fff;
-    cursor: pointer;
-    color: black;
-    margin-left: 5%;
-  }
-
   .footer_h3 {
     background-color: #b9ff66;
     color: black;
     width: 50%;
     font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .form_copyright {
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .form_text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     margin: 20px;
+    white-space: nowrap;
+    gap: 30px;
   }
 
   .footer_flexbox {

@@ -6,9 +6,6 @@ import {Footer} from "../footer/footer.jsx"
 
 
 export function Home(){
-    const handleButtonClick = () => {
-        window.location.href = 'https://github.com/ReeneQo/hakawt'; 
-      };
     return <div>
         <header>
             <div className={styles.head}>
@@ -20,16 +17,15 @@ export function Home(){
                     <li className={styles.li}><Link to='/Developers'>Developers</Link></li>
                     <li className={styles.li}><Link to='/CardsTemp'>fggfgf</Link></li>
                 </ul>
-                <button className={styles.button} onClick={handleButtonClick}> <Github/> GitHub </button> 
+                <button className={styles.button} onClick={() => {window.open('https://github.com/ReeneQo/hakawt', '_blank')}}> <Github/> GitHub </button> 
             </nav>
             </div>
         </header>
-        
+
         <section className={styles.main}>
                 <div className={styles.main_conteiner}>
                     <h1 className={styles.h1}>
                         На нашем сайте вы можете выбрать курс обучения и получить материалы по предметам.
-                    {/* В нашем колледже мы предлагаем широкий выбор курсов, которые помогут вам развить необходимые навыки и знания для успешной карьеры в выбранной вами области */}
                     </h1>
                     <p className={styles.main_text}>
                     Каждый курс включает в себя разнообразные предметы, которые помогут вам глубже понять предмет и подготовят вас к реальным вызовам в профессиональной среде. Выбирайте предметы, которые соответствуют вашим интересам и целям!

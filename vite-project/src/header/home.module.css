@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
 .posimg {
-    margin: 1% 5%;
+    margin: 10px 5%;
 }
 
 .li {
@@ -7,13 +11,13 @@
     font-family: 'Space Grotesk';
 }
 
-
 .head {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     min-width: 300px;
+    border-bottom: 2px solid black;
 }
 
 .nav {
@@ -37,6 +41,7 @@
 }
 
 .button {
+    background: #B9FF66;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,13 +63,13 @@
     margin-right: 5%;
 }
 
-
 h1{
     font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
     font-weight: 500;
     padding-bottom: 30px;
     margin: 0;
     font-family: 'Space Grotesk';
+    margin-top: 20px;
 }
 
 .main_text{
