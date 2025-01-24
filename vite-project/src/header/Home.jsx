@@ -2,6 +2,7 @@ import { Github } from 'lucide-react';
 import styles from './home.module.css'
 import { Link } from 'react-router-dom';
 import {ButtonCourse} from '../components/ButtonCourse/ButtonCourse.jsx'
+import {Footer} from "../footer/footer.jsx"
 
 export function Home(){
     const handleButtonClick = () => {
@@ -37,6 +38,7 @@ export function Home(){
                     <img className={styles.image_main} src="Illustration.svg" alt="" />
                 </div>
         </section>
+        <Footer/>
     </div>
 }
 
