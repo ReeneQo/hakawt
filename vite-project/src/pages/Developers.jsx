@@ -25,7 +25,7 @@ const Developers = () => {
             </div>
         </header>
 
-        <h1 className={styles.h1_dev}>Our Team</h1>
+        {/* <h1 className={styles.h1_dev}>Our Team</h1> */}
 
         <div className={styles.card_container}>
        <div className={styles.card_main}>
@@ -77,7 +77,7 @@ const Developers = () => {
         <p>About you</p>
        </div>
        </div>
-       <Footer/>
+       <h1 className={styles.h1_dev}>Developers</h1>
     </div>
     )
 };
