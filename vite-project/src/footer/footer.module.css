@@ -13,9 +13,6 @@
     gap: 20px;
     border-radius: 5%;
     background-color: #292A32;
-    position: absolute;
-    right: 5%;
-    bottom: 27%;
     height: 150px;
     width: 500px;
   }
@@ -46,8 +43,8 @@
   .footer_h3 {
     background-color: #b9ff66;
     color: black;
-    width: 4%;
-    font-size: 19px;
+    width: 50%;
+    font-size: 20px;
   }
 
   .form_copyright {
@@ -55,6 +52,12 @@
   }
 
   .form_text {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_flexbox {
+     display: flex;
+     justify-content: space-between;
   }
   
