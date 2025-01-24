@@ -1,26 +1,12 @@
-import { Github } from 'lucide-react';
-import styles from '../header/home.module.css'
+
 import style from "../pages/AboutUs.module.css"
-import { NavLink } from 'react-router-dom';
 import {Footer} from "../footer/footer.jsx"
+import { Header } from '../header/Header.jsx';
 
 
 export function About() {
-    return <div className={styles.head_general}>
-        <header>
-            <div className={styles.head}>
-            <img className={styles.posimg} src='/Logo.svg' alt="" />
-            <nav className={styles.nav}>
-            <ul className={styles.spisok}>
-                    <NavLink className={styles.li} to='/'>Home</NavLink>
-                    <NavLink className={styles.li} to='/About'>About us</NavLink>
-                    <NavLink className={styles.li} to='/Developers'>Developers</NavLink>
-            </ul>
-                <button className={styles.button} onClick={() => {window.open('https://github.com/ReeneQo/hakawt', '_blank')}}> <Github/> GitHub </button> 
-            </nav>
-            </div>
-        </header>
-
+    return <div>
+        <Header/>
         <section className={style.about_main}>
             <div className={style.about_flex}>
             <div className={style.about_text}>

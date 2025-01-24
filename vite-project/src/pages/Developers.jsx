@@ -1,26 +1,13 @@
 import React from 'react';
 import styles from "./Developers.module.css"
 import { Github } from 'lucide-react';
-import style from '../header/home.module.css';
-import { NavLink } from 'react-router-dom';
+import { Header } from '../header/Header';
 
 const Developers = () => {
     return (
-    <div className={style.body}>
+    <div>
+    <Header/>
     <div className={styles.card_general}>
-        <header>
-            <div className={style.head}>
-            <img className={style.posimg} src='/Logo.svg' alt="" />
-            <nav className={style.nav}>
-                <ul className={style.spisok}>
-                    <NavLink className={styles.li} to='/'>Home</NavLink>
-                    <NavLink className={styles.li} to='/About'>About us</NavLink>
-                    <NavLink className={styles.li} to='/Developers'>Developers</NavLink>
-                </ul>
-                <button className={style.button} onClick={() => window.open('https://github.com/ReeneQo/hakawt', '_blank')}> <Github/> GitHub </button> 
-            </nav>
-            </div>
-        </header>
 
         <div className={styles.card_container}>
 
@@ -83,7 +70,7 @@ const Developers = () => {
 
     </div>
 
-       <div className={style.foot}>
+       <div>
         <h1 className={styles.h1_dev}>Developers</h1>
        </div>
     
