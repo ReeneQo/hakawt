@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './header/Home.jsx'
+import CardsTemp from './components/card/Card.jsx'
 import {About} from './pages/About.jsx'
 import Developers from './pages/Developers.jsx';
 
@@ -12,6 +13,7 @@ export function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Developers" element={<Developers />} />
+          <Route path="/CardsTemp" element={<CardsTemp />} />
         </Routes>
       </Router>
     </div>

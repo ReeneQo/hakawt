@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {ButtonCourse} from '../components/ButtonCourse/ButtonCourse.jsx'
 import {Footer} from "../footer/footer.jsx"
 
+
 export function Home(){
     const handleButtonClick = () => {
         window.location.href = 'https://github.com/ReeneQo/hakawt'; 
@@ -17,6 +18,7 @@ export function Home(){
                     <li className={styles.li}><Link to='/'>Home</Link></li>
                     <li className={styles.li}><Link to='/About'>About us</Link></li>
                     <li className={styles.li}><Link to='/Developers'>Developers</Link></li>
+                    <li className={styles.li}><Link to='/CardsTemp'>fggfgf</Link></li>
                 </ul>
                 <button className={styles.button} onClick={handleButtonClick}> <Github/> GitHub </button> 
             </nav>
