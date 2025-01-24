@@ -17,6 +17,21 @@ html,body {
     margin: 0;
 }
 
+.li {
+    white-space: nowrap;
+    font-family: 'Space Grotesk';
+    text-decoration: none;
+    transition: 0.45s;
+}
+
+.li:visited {
+    color: black;
+}
+
+.li:hover {
+    color: #B9FF66;
+}
+
 .h1_dev {
     display: flex;
     justify-content: center;
@@ -59,8 +74,8 @@ html,body {
 
 .git_button {
     position: absolute;
-    right: 8%;
-    bottom: 80%;
+    right: 50px;
+    top: 35px;
     background: #B9FF66;
     border: 1px solid black;
 }

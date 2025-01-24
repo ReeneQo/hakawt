@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-
-
 .posimg {
     margin: 10px 5%;
 }
@@ -9,6 +7,16 @@
 .li {
     white-space: nowrap;
     font-family: 'Space Grotesk';
+    text-decoration: none;
+    transition: 0.45s;
+}
+
+.li:visited {
+    color: black;
+}
+
+.li:hover {
+    color: #B9FF66;
 }
 
 .head {
@@ -70,6 +78,7 @@ h1{
     margin: 0;
     font-family: 'Space Grotesk';
     margin-top: 20px;
+    transition: 0.3s;
 }
 
 .main_text{
@@ -79,6 +88,7 @@ h1{
     font-family: 'Space Grotesk';
     margin: 0;
     padding-bottom: 30px;
+    transition: 0.3s;
 }
 
 .main_conteiner{
@@ -105,6 +115,7 @@ h1{
 .main__image {
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 .image_main{

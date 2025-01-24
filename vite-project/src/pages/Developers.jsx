@@ -2,8 +2,7 @@ import React from 'react';
 import styles from "./Developers.module.css"
 import { Github } from 'lucide-react';
 import style from '../header/home.module.css';
-import { Link } from 'react-router-dom';
-import {Footer} from "../footer/footer.jsx"
+import { NavLink } from 'react-router-dom';
 
 const Developers = () => {
     return (
@@ -14,16 +13,15 @@ const Developers = () => {
             <img className={style.posimg} src='/Logo.svg' alt="" />
             <nav className={style.nav}>
                 <ul className={style.spisok}>
-                    <li className={style.li}><Link to='/'>Home</Link></li>
-                    <li className={style.li}><Link to='/About'>About us</Link></li>
-                    <li className={style.li}><Link to='/Developers'>Developers</Link></li>
+                    <NavLink className={styles.li} to='/'>Home</NavLink>
+                    <NavLink className={styles.li} to='/About'>About us</NavLink>
+                    <NavLink className={styles.li} to='/Developers'>Developers</NavLink>
                 </ul>
                 <button className={style.button} onClick={() => window.open('https://github.com/ReeneQo/hakawt', '_blank')}> <Github/> GitHub </button> 
             </nav>
             </div>
         </header>
 
-        {/* <h1 className={styles.h1_dev}>Our Team</h1> */}
 
         <div className={styles.card_container}>
        <div className={styles.card_main}>
@@ -79,7 +77,7 @@ const Developers = () => {
     </div>
 
        <div className={style.foot}>
-            <h1 className={styles.h1_dev}>Developers</h1>
+        <h1 className={styles.h1_dev}>Developers</h1>
        </div>
     
     </div>
