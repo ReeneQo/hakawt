@@ -1,6 +1,13 @@
 html {
     height: 100%;
 }
+
+.card_general {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .h1_dev {
     display: flex;
     justify-content: center;
