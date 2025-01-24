@@ -3,6 +3,7 @@ import styles from "./Developers.module.css"
 import { Github } from 'lucide-react';
 import style from '../header/home.module.css';
 import { Link } from 'react-router-dom';
+import {Footer} from "../footer/footer.jsx"
 
 const Developers = () => {
     return (
