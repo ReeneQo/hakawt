@@ -1,6 +1,6 @@
 import { Github } from 'lucide-react';
 import styles from './home.module.css'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {ButtonCourse} from '../components/ButtonCourse/ButtonCourse.jsx'
 import {Footer} from "../footer/footer.jsx"
 
@@ -12,10 +12,10 @@ export function Home(){
             <img className={styles.posimg} src='/Logo.svg' alt="" />
             <nav className={styles.nav}>
                 <ul className={styles.spisok}>
-                    <li className={styles.li}><Link to='/'>Home</Link></li>
-                    <li className={styles.li}><Link to='/About'>About us</Link></li>
-                    <li className={styles.li}><Link to='/Developers'>Developers</Link></li>
-                    <li className={styles.li}><Link to='/CardsTemp'>fggfgf</Link></li>
+                    <NavLink className={styles.li} to='/'>Home</NavLink>
+                    <NavLink className={styles.li} to='/About'>About us</NavLink>
+                    <NavLink className={styles.li} to='/Developers'>Developers</NavLink>
+                    <NavLink className={styles.li} to='/CardsTemp'>fggfgf</NavLink>
                 </ul>
                 <button className={styles.button} onClick={() => {window.open('https://github.com/ReeneQo/hakawt', '_blank')}}> <Github/> GitHub </button> 
             </nav>
