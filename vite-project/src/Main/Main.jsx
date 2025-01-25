@@ -76,7 +76,7 @@ export function Main() {
               />
 
               {selectedCourse && (
-                <div className="subjects-grid">
+                <div className={styles.subjectsgrid}>
                   {selectedCourse.subjects.map((subject) => (
                     <SubjectCard
                       key={subject.id}
@@ -107,7 +107,7 @@ export function Main() {
           )}
         </div>
         <div className={styles.main__image}>
-          <img className={styles.image_main} src="Illustration.svg" alt="" />
+          <img className={styles.image_main} src="Illustration.svg" alt="" width={800} />
         </div>
       </section>
     </div>

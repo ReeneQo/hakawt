@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 .course_dropdown {
   position: relative;
   width: 100%;
   max-width: 28rem;
-  margin: 0 auto 3rem;
 }
 
 .dropdown_button {
-  width: 100%;
-  background-color: white;
-  padding: 0.75rem 1rem;
+  background-color: #191A23;
+  width: 250px;
+  padding: 20px; 
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -17,13 +18,26 @@
   transition: background-color 0.2s;
 }
 
+.ArrowVniz {
+  color: white;
+  margin-top: 4px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.ArrowVverx {
+  transform: rotate(180deg);
+}
+
 .dropdown_button:hover {
-  background-color: #f9fafb;
+  background-color: #373846;
 }
 
 .dropdown_text {
-  color: #374151;
+  color: white;
   font-weight: 500;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
 }
 
 .dropdown-icon {
@@ -39,19 +53,29 @@
 
 .dropdown_menu {
   position: absolute;
-  width: 100%;
+  width: 200px;
   margin-top: 0.5rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
 .dropdown_item {
-  width: 100%;
+  display: flex;
+  width: 250px;
+  flex-direction: column;
   padding: 0.75rem 1rem;
   text-align: left;
+  border-radius: 3px;
   transition: background-color 0.2s;
+  font-size: 20px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  white-space: pre;
+  background-color: white;
+}
+
+.dropdown_item:hover {
+  background-color: aliceblue;
 }
 
 .dropdown-item:first-child {

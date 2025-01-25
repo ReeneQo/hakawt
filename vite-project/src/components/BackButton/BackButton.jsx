@@ -6,7 +6,7 @@ export const BackButton = ({ onClick }) => {
   return (
     <button onClick={onClick} className={styles.back_button}>
       <ArrowLeft className={styles.back_button_icon} />
-      Назад
-    </button>
+      Back
+    </button> 
   );
 };
