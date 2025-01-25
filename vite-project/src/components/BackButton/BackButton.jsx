@@ -4,8 +4,8 @@ import styles from './BackButton.module.css';
 
 export const BackButton = ({ onClick }) => {
   return (
-    <button onClick={onClick} className="back-button">
-      <ArrowLeft className="back-button-icon" />
+    <button onClick={onClick} className={styles.back_button}>
+      <ArrowLeft className={styles.back_button_icon} />
       Назад
     </button>
   );

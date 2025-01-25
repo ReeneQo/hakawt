@@ -4,22 +4,22 @@ import styles from './TopicsList.module.css';
 
 export const TopicsList = ({ subject, onSelectTopic }) => {
   return (
-    <div className="topics-container">
-      <div className="topics-card">
-        <div className="topics-header">
-          <BookOpen className="topics-icon" />
-          <h2 className="topics-title">{subject.name}</h2>
+    <div className={styles.topics_container}>
+      <div className={styles.topics_card}>
+        <div className={styles.topics_header}>
+          <BookOpen className={styles.topics_icon} />
+          <h2 className={styles.topics_title}>{subject.name}</h2>
         </div>
-        <div className="topics-list">
+        <div className={styles.topics_list}>
           {subject.topics.map((topic) => (
             <button
               key={topic.id}
               onClick={() => onSelectTopic(topic)}
-              className="topic-item"
+              className={styles.topic_item}
             >
-              <div className="topic-content">
-                <ListChecks className="topic-icon" />
-                <span className="topic-title">{topic.title}</span>
+              <div className={styles.topic_content}>
+                <ListChecks className={styles.topic_icon} />
+                <span className={styles.topic_title}>{topic.title}</span>
               </div>
             </button>
           ))}

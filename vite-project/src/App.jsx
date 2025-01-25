@@ -6,7 +6,9 @@ import {About} from './pages/About.jsx'
 import Developers from './pages/Developers.jsx';
 import PageTransition from './components/Transition/PageTransition.jsx';
 
+
 export function App() {
+
   return (
     <div>
       <Router>
