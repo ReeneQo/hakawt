@@ -1,4 +1,6 @@
 import styles from './Main.module.css'
+import {CourseDropdown} from '../components/CourseDropdown/CourseDropdown'
+
 
 export function Main(){
     return <div> 
@@ -10,6 +12,7 @@ export function Main(){
                     <p className={styles.main_text}>
                     Каждый курс включает в себя разнообразные предметы, которые помогут вам глубже понять предмет и подготовят вас к реальным вызовам в профессиональной среде. Выбирайте предметы, которые соответствуют вашим интересам и целям!
                     </p>
+                    <CourseDropdown/>
                 </div>
                 <div className={styles.main__image}>
                     <img className={styles.image_main} src="Illustration.svg" alt="" />
