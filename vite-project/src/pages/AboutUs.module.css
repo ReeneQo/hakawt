@@ -55,7 +55,6 @@ main {
 }
     
 
-/* Для экранов с шириной до 768px */
 @media (max-width: 768px) {
   .about_main {
     font-size: 20px;
@@ -69,7 +68,6 @@ main {
   }
 }
 
-/* Для экранов с шириной до 480px */
 @media (max-width: 480px) {
   .about_main {
     font-size: 18px;

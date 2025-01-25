@@ -1,32 +1,26 @@
-/* Импорт шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-/* Основные стили */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Контейнер для всего содержимого */
 .body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Основной контент */
 main {
   flex: 1;
 }
 
-/* Общие стили для карточек */
 .card_general {
   min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* Стили для ссылок */
 .li {
   white-space: nowrap;
   font-family: 'Space Grotesk';
@@ -34,7 +28,6 @@ main {
   transition: 0.45s;
 }
 
-/* Стили для контейнера с именами */
 .names {
   display: flex;
   justify-content: space-between;
@@ -43,36 +36,30 @@ main {
   text-align: center;
 }
 
-/* Стили для изображений */
 .card_image {
   width: 80px;
   height: 80px;
   margin: 0 0 0 10px;
 }
 
-/* Стили для кнопок GitHub */
 .git_button {
   background: #B9FF66;
   border: 1px solid black;
   margin: 0 0 20px 10px;
 }
 
-/* Стили для посещенных ссылок */
 .li:visited {
   color: black;
 }
 
-/* Стили для наведения на ссылки */
 .li:hover {
   color: #B9FF66;
 }
 
-/* Стили для текста в карточках */
 .card_text {
   font-weight: 800;
 }
 
-/* Стили для заголовка разработчика */
 .h1_dev {
   display: flex;
   justify-content: center;
@@ -84,7 +71,6 @@ main {
   padding-top: 20px;
 }
 
-/* Стили для контейнера с карточками */
 .card_container {
   display: flex;
   flex-direction: row;
@@ -92,10 +78,8 @@ main {
   align-items: center;
   border-top: 2px solid #191A23;
   gap: 10%;
-  /* margin: 0 30px; */
 }
 
-/* Стили для второго контейнера с карточками */
 .card_container2 {
   display: flex;
   justify-content: center;
@@ -104,7 +88,6 @@ main {
   gap: 10%;
 }
 
-/* Стили для основной карточки */
 .card_main {
   border: 2px solid black;
   border-radius: 20px;
@@ -116,13 +99,12 @@ main {
   position: relative;
 }
 
-/* Стили для заголовков */
 h4 {
   text-align: center;
   margin-bottom: 0;
 }
 
-/* Стили для колонок */
+
 @media (max-width: 1011px) {
   .card_container {
     display: flex;
