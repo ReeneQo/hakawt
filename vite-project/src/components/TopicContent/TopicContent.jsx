@@ -11,27 +11,27 @@ export const TopicContent = ({
   onHeadingClick,
 }) => {
   return (
-    <div className="content-container">
-      <div className="search-container">
-        <div className="search-input-wrapper">
-          <Search className="search-icon" />
+    <div className={styles.content_container}>
+      <div className={styles.search_container}>
+        <div className={styles.search_input_wrapper}>
+          <Search className={styles.search_icon} />
           <input
             type="text"
             placeholder="Поиск по подтемам..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="search-input"
+            className={styles.search_input}
           />
         </div>
         {searchQuery && (
-          <div className="search-results">
+          <div className={styles.search_results}>
             {filteredHeadings.map((heading, index) => (
               <button
                 key={index}
                 onClick={() => onHeadingClick(heading.text)}
-                className="search-result-item"
+                className={styles.search_result_item}
               >
-                <span className="search-result-hash">{'#'.repeat(heading.level)}</span>{' '}
+                <span className={styles.search_result_hash}>{'#'.repeat(heading.level)}</span>{' '}
                 {heading.text}
               </button>
             ))}
@@ -39,10 +39,10 @@ export const TopicContent = ({
         )}
       </div>
       
-      <div className="content-wrapper">
-        <div className="content-text">
+      <div className={styles.content_wrapper}>
+        <div className={styles.content_text}>
           <div 
-            className="content-body"
+            className={styles.content_body}
             dangerouslySetInnerHTML={{ __html: renderContent(topic.content) }}
           />
         </div>

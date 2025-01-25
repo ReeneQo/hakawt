@@ -1,9 +1,9 @@
-.content-container {
+.content_container {
   max-width: 64rem;
   margin: 0 auto;
 }
 
-.search-container {
+.search_container {
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -11,11 +11,11 @@
   margin-bottom: 1.5rem;
 }
 
-.search-input-wrapper {
+.search_input_wrapper {
   position: relative;
 }
 
-.search-icon {
+.search_icon {
   position: absolute;
   left: 0.75rem;
   top: 50%;
@@ -25,7 +25,7 @@
   height: 1.25rem;
 }
 
-.search-input {
+.search_input {
   width: 100%;
   padding: 0.5rem 1rem 0.5rem 2.5rem;
   border-radius: 0.5rem;
@@ -34,19 +34,19 @@
   transition: all 0.2s;
 }
 
-.search-input:focus {
+.search_input:focus {
   border-color: #a5b4fc;
   box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.5);
 }
 
-.search-results {
+.search_results {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.search-result-item {
+.search_result_item {
   width: 100%;
   text-align: left;
   padding: 0.5rem 1rem;
@@ -54,26 +54,26 @@
   transition: background-color 0.2s;
 }
 
-.search-result-item:hover {
+.search_result_item:hover {
   background-color: #eef2ff;
 }
 
-.search-result-hash {
+.search_result_hash {
   color: #4f46e5;
 }
 
-.content-wrapper {
+.content_wrapper {
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }
 
-.content-text {
+.content_text {
   max-width: none;
 }
 
-.content-body {
+.content_body {
   white-space: pre-wrap;
   font-family: system-ui, -apple-system, sans-serif;
 }

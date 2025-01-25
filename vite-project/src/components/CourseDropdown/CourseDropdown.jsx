@@ -9,20 +9,20 @@ export const CourseDropdown = ({
   onSelect,
 }) => {
   return (
-    <div className={styles.course-dropdown}>
+    <div className={styles.course_dropdown}>
       <button onClick={onToggle} className={styles.dropdown_button}>
-        <span className={styles.dropdown-text}>
+        <span className={styles.dropdown_text}>
           {selectedCourse ? selectedCourse.name : 'Выберите курс'}
         </span>
       </button>
 
       {isOpen && (
-        <div className={styles.dropdown-menu}>
+        <div className={styles.dropdown_menu}>
           {courses.map((course) => (
             <button
               key={course.id}
               onClick={() => onSelect(course)}
-              className={styles.dropdown-item}
+              className={styles.dropdown_item}
             >
               {course.name}
             </button>

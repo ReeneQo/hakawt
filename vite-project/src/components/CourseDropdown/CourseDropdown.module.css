@@ -1,11 +1,11 @@
-.course-dropdown {
+.course_dropdown {
   position: relative;
   width: 100%;
   max-width: 28rem;
   margin: 0 auto 3rem;
 }
 
-.dropdown-button {
+.dropdown_button {
   width: 100%;
   background-color: white;
   padding: 0.75rem 1rem;
@@ -17,11 +17,11 @@
   transition: background-color 0.2s;
 }
 
-.dropdown-button:hover {
+.dropdown_button:hover {
   background-color: #f9fafb;
 }
 
-.dropdown-text {
+.dropdown_text {
   color: #374151;
   font-weight: 500;
 }
@@ -37,7 +37,7 @@
   transform: rotate(180deg);
 }
 
-.dropdown-menu {
+.dropdown_menu {
   position: absolute;
   width: 100%;
   margin-top: 0.5rem;
@@ -47,7 +47,7 @@
   z-index: 10;
 }
 
-.dropdown-item {
+.dropdown_item {
   width: 100%;
   padding: 0.75rem 1rem;
   text-align: left;
