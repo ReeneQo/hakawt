@@ -26,6 +26,10 @@
     color: #B9FF66;
 }
 
+.li:link {
+    color:black;
+}
+
 .nav {
     width: 100%;
     display: flex;
@@ -61,7 +65,6 @@
     min-width: 150px;
 }
 
-/* Адаптивность для экранов с шириной до 1077px */
 @media (max-width: 1077px) {
     .head {
         flex-direction: column;
@@ -75,11 +78,11 @@
         align-items: center;
         margin-right: 0;
         margin-left: 0;
-        gap: 10px;
+        gap: 15px;
     }
     .spisok {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
     .button {
         width: 30%;
@@ -87,7 +90,6 @@
     }
 }
 
-/* Адаптивность для экранов с шириной до 768px */
 @media (max-width: 768px) {
     .head {
         padding: 20px;
@@ -105,7 +107,6 @@
     }
 }
 
-/* Адаптивность для экранов с шириной до 480px */
 @media (max-width: 480px) {
     .head {
         padding: 10px;

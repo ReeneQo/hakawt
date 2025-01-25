@@ -12,7 +12,7 @@ export function Footer() {
             <p className={styles.p}>Address: Moscow City</p>
         </div>
     </div>
-    <p className={styles.form_copyright}>&copy; 2024 Garage Genius. All Rights Reserved</p>
+    <p className={styles.form_copyright}>&copy; 2025 Garage Genius. All Rights Reserved</p>
     </footer>
     ) 
 }

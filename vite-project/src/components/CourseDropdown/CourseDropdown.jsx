@@ -15,7 +15,6 @@ export const CourseDropdown = ({
           {selectedCourse ? selectedCourse.name : 'Выберите курс'} 
         </span>
         <ArrowDown className={`${styles.ArrowVniz} ${isOpen ? styles.ArrowVverx: ''}`}/>
-
       </button>
 
       {isOpen && (

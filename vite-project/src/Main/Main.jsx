@@ -107,7 +107,7 @@ export function Main() {
           )}
         </div>
         <div className={styles.main__image}>
-          <img className={styles.image_main} src="Illustration.svg" alt="" width={800} />
+          <img className={styles.image_main} src="Illustration.svg" alt="" width={950} />
         </div>
       </section>
     </div>

@@ -4,16 +4,16 @@
     flex-direction: row;
     justify-content: space-between;
     margin-right: 5%;
-    margin-bottom: 5vw; /* Динамический отступ */
+    margin-bottom: 5vw; 
 }
 
-/* Адаптация для экранов с шириной до 300px */
 @media (max-width: 300px) {
     .main {
-        margin-bottom: 10px; /* Уменьшение отступа для маленьких экранов */
+        margin-bottom: 10px; 
     }
 }
 h1{
+
     font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
     font-weight: 500;
     padding-bottom: 30px;
@@ -41,16 +41,16 @@ h1{
 
 .button_course{
     border-radius: 14px;
-    padding: 30px 50px; /* Увеличение padding */
-    width: 400px; /* Увеличение ширины */
-    height: 120px; /* Увеличение высоты */
+    padding: 30px 50px; 
+    width: 400px; 
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #191A23;
     color: #ffffff;
     font-weight: 400;
-    font-size: 28px; /* Увеличение размера шрифта */
+    font-size: 28px; 
     line-height: 140%;
 }
 
@@ -59,7 +59,41 @@ h1{
     grid-template-columns: repeat(3, 600px);
 }
 
-/* Адаптация к разрешению */
+@media (max-width: 1800px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 550px);
+    }
+}
+
+@media (max-width: 1700px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+    }
+}
+
+@media (max-width: 1600px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 450px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+    }
+}
+
 @media (max-width: 1200px) {
     .button_course {
         width: 350px;
@@ -72,6 +106,12 @@ h1{
         justify-content: center;
         align-items: center;
     }
+
+    .subjectsgrid {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -99,18 +139,18 @@ h1{
 }
 .main__image {
     display: flex;
-    transition: 0.3s;
+    justify-content: right;
+    width: 950px;
+    height: 650px;
 }
 
 .image_main{
     width: 100%; 
-    height: 650px;
     min-width: 500px;
     min-height: 450px;
 }
 
-/* Медиа-запрос для удаления изображения после 1146px */
-@media (max-width: 1146px) {
+@media (max-width: 1199px) {
     .main__image {
         display: none;
     }
