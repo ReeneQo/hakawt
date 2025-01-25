@@ -1,12 +1,12 @@
 import { Github } from 'lucide-react';
 import styles from './Header.module.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export function Header() {
   return (
     <header>
       <div className={styles.head}>
-        <img className={styles.posimg} src="/Logo.svg" alt="" />
+        <NavLink to ='/' className={styles.posimg} ><img src="/Logo.svg" alt="" /></NavLink>
         <nav className={styles.nav}>
           <ul className={styles.spisok}>
             <NavLink className={styles.li} to="/">

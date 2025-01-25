@@ -5,8 +5,9 @@ import { Header } from '../header/Header';
 
 const Developers = () => {
     return (
-    <div>
-    <Header/>
+    <div className={styles.body}>
+        <main>
+        <Header/>
     <div className={styles.card_general}>
 
         <div className={styles.card_container}>
@@ -39,7 +40,7 @@ const Developers = () => {
                     <button className={styles.git_button} onClick={() => window.open('https://github.com/ierumi', '_blank')}><Github/></button>
                 </div>
             <hr></hr>
-            <span>-10% code writing</span>
+            <span>-20% code writing</span>
         </div>
 
        </div>
@@ -69,6 +70,7 @@ const Developers = () => {
        </div>
 
     </div>
+        </main>
 
        <div>
         <h1 className={styles.h1_dev}>Developers</h1>
