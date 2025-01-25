@@ -21,6 +21,7 @@ main {
   border-radius: 7px;
   white-space: pre;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .abzac1 {
@@ -56,11 +57,11 @@ main {
 
 /* Для экранов с шириной до 768px */
 @media (max-width: 768px) {
-  .about_h1 {
-    font-size: clamp(1.1rem, 0.9rem + 0.91vw, 1.5rem);
+  .about_main {
+    font-size: 20px;
   }
   .about_text {
-    font-size: clamp(0.9rem, 0.7rem + 0.91vw, 1.2rem);
+    margin-top: 15px;
   }
   .about_flex {
     margin-left: 1vw;
@@ -70,11 +71,11 @@ main {
 
 /* Для экранов с шириной до 480px */
 @media (max-width: 480px) {
-  .about_h1 {
-    font-size: clamp(1rem, 0.8rem + 0.91vw, 1.3rem);
+  .about_main {
+    font-size: 18px;
   }
   .about_text {
-    font-size: clamp(0.8rem, 0.6rem + 0.91vw, 1.1rem);
+    margin-top: 15px;
   }
   .about_flex {
     flex-direction: column;
