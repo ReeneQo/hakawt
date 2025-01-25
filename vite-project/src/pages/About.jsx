@@ -1,4 +1,3 @@
-
 import style from "../pages/AboutUs.module.css"
 import {Footer} from "../footer/footer.jsx"
 import { Header } from '../header/Header.jsx';
