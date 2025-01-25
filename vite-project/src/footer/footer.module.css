@@ -17,17 +17,18 @@
     border-radius: 10px;
     background-color: #292A32;
     height: 150px;
-    width: 500px;
-    margin: 50px;
+    width: 80%; /* Используем относительную единицу измерения */
+    margin: 50px auto; /* Добавляем auto для центрирования */
   }
 
   .footer_h3 {
     background-color: #b9ff66;
     color: black;
-    width: 50%;
+    width: 80%; /* Используем относительную единицу измерения */
     font-size: 20px;
     padding: 5px;
     border-radius: 5px;
+    margin: 0 auto; /* Добавляем auto для центрирования */
   }
 
   .form_copyright {
@@ -49,5 +50,49 @@
      display: flex;
      justify-content: space-between;
      max-width: 1200px;
+     margin: 0 auto; /* Добавляем auto для центрирования */
   }
-  
+
+/* Медиа-запросы для адаптивного дизайна */
+
+@media (max-width: 1200px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .form_email {
+    width: 90%;
+  }
+}
+
+@media (max-width: 867px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .form_email {
+    width: 95%;
+  }
+  .footer_h3 {
+    width: 95%;
+  }
+  .form_text {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .form_email {
+    width: 98%;
+  }
+  .footer_h3 {
+    width: 98%;
+  }
+  .form_text {
+    flex-direction: column;
+  }
+  .footer_main {
+    margin-top: 50px;
+  }
+}
