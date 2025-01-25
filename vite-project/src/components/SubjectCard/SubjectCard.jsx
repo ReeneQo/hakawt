@@ -2,8 +2,10 @@ import React from 'react';
 import { Book } from 'lucide-react';
 import styles from './SubjectCard.module.css';
 
+
 export const SubjectCard = ({ subject, onSelect }) => {
-  return (
+  return ( 
+    <div>
     <div className={styles.subject_card}>
       <div className={styles.subject_header}>
         <Book className={styles.subject_icon} />
@@ -18,6 +20,7 @@ export const SubjectCard = ({ subject, onSelect }) => {
           Темы
         </button>
       </div>
+    </div>
     </div>
   );
 };

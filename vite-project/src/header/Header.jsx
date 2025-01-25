@@ -14,12 +14,9 @@ export function Header() {
             </NavLink>
             <NavLink className={styles.li} to="/About">
               About us
-            </NavLink>
+            </NavLink> 
             <NavLink className={styles.li} to="/Developers">
               Developers
-            </NavLink>
-            <NavLink className={styles.li} to="/CardsTemp">
-              fggfgf
             </NavLink>
           </ul>
           <button
