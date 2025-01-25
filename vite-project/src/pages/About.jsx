@@ -1,10 +1,11 @@
 import style from "../pages/AboutUs.module.css"
 import {Footer} from "../footer/footer.jsx"
 import { Header } from '../header/Header.jsx';
-
+import styles from './AboutUs.module.css'
 
 export function About() {
-    return <div>
+    return <div className={styles.body}>
+        <main>
         <Header/>
         <section className={style.about_main}>
             <div className={style.about_flex}>
@@ -20,6 +21,7 @@ export function About() {
         <img src="../public/aboutiilustration.svg" alt="" width={600} />
         </div>
         </section>
+        </main>
         <Footer/>
 </div>      
 };
