@@ -1,11 +1,12 @@
 import React from 'react';
-import { ArrowLeft } from 'lucide-react';
+import {ArrowLeft} from 'lucide-react';
+import styles from './BackButton.module.css';
 
-export function BackButton(){
-    return(
-        <button onClick={onClick}>
-            <ArrowLeft/>
-            <span>Назад</span>
-        </button>
-    )
-}
+export const BackButton = ({ onClick }) => {
+  return (
+    <button onClick={onClick} className={styles.back_button}>
+      <ArrowLeft className={styles.back_button_icon} />
+      Назад
+    </button>
+  );
+};

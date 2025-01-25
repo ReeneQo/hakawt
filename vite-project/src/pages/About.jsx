@@ -1,25 +1,12 @@
-import { Github } from 'lucide-react';
-import styles from '../header/home.module.css'
 import style from "../pages/AboutUs.module.css"
-import { Link } from 'react-router-dom';
 import {Footer} from "../footer/footer.jsx"
+import { Header } from '../header/Header.jsx';
+import styles from './AboutUs.module.css'
 
 export function About() {
-    return <div className={style.head_general}>
-        <header>
-            <div className={styles.head}>
-            <img className={styles.posimg} src='/Logo.svg' alt="" />
-            <nav className={styles.nav}>
-            <ul className={styles.spisok}>
-                <li className={styles.li}><Link to='/'>Home</Link></li>
-                <li className={styles.li}><Link to='/About'>About us</Link></li>
-                <li className={styles.li}><Link to='/Developers'>Developers</Link></li>
-            </ul>
-                <button className={styles.button} onClick={() => {window.open('https://github.com/ReeneQo/hakawt', '_blank')}}> <Github/> GitHub </button> 
-            </nav>
-            </div>
-        </header>
-        
+    return <div className={styles.body}>
+        <main>
+        <Header/>
         <section className={style.about_main}>
             <div className={style.about_flex}>
             <div className={style.about_text}>
@@ -34,6 +21,7 @@ export function About() {
         <img src="../public/aboutiilustration.svg" alt="" width={600} />
         </div>
         </section>
+        </main>
         <Footer/>
 </div>      
 };

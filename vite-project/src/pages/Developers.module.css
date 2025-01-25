@@ -1,20 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-html,body {
-    height: 100%;
+body {
     margin: 0;
+    padding: 0;
 }
 
 .body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .card_general {
     min-height: 100%;
     padding: 0;
     margin: 0;
+}
+
+.li {
+    white-space: nowrap;
+    font-family: 'Space Grotesk';
+    text-decoration: none;
+    transition: 0.45s;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.card_image {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 10px;
+}
+
+.git_button {
+    background: #B9FF66;
+    border: 1px solid black;
+    margin: 0 0 20px 10px;
+}
+
+.li:visited {
+    color: black;
+}
+
+.li:hover {
+    color: #B9FF66;
+}
+
+.card_text {
+    font-weight: 800;
 }
 
 .h1_dev {
@@ -24,7 +67,7 @@ html,body {
     font-family: 'Space Grotesk';
     background-color: #191A23;
     color: white;
-    margin: 50px auto 50px auto;
+    margin: 50px 0 0 0;
     padding-top: 20px;
 }
 
@@ -45,7 +88,6 @@ html,body {
     gap: 10%;
 }
 
-
 .card_main {
     border: 2px solid black;
     border-radius: 20px;
@@ -57,29 +99,10 @@ html,body {
     position: relative;
 }
 
-.git_button {
-    position: absolute;
-    right: 8%;
-    bottom: 80%;
-    background: #B9FF66;
-    border: 1px solid black;
-}
 
 h4 {
     text-align: center;
     margin-bottom: 0;
 }
 
-.card_text {
-    text-align: center;
-    margin-top: 0;
-}
 
-.card_image {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 5%;
-    top: 4%;
-    z-index: 1;
-}
