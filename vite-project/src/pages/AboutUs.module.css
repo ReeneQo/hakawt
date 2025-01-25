@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 .about_h1 {
     font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
     background-color: #b9ff66;
