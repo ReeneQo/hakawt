@@ -5,6 +5,7 @@
   width: 100%;
   margin-bottom: 23px;
   max-width: 28rem;
+
 }
 
 .dropdown_button {
@@ -17,6 +18,13 @@
   align-items: center;
   justify-content: space-between;
   transition: background-color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .dropdown_button {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .ArrowVniz {

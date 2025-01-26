@@ -85,6 +85,9 @@
   .p {
     margin: 10px 0;
   }
+  .footer_main{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -97,8 +100,5 @@
   }
   .form_text {
     flex-direction: column;
-  }
-  .footer_main {
-    margin-top: 50px;
   }
 }

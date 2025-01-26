@@ -18,7 +18,7 @@ const subjId = subject.id
     )
   } else if (subjId % 6 === 2) {
     return (
-      <div className={styles.card__green}>
+      <div className={styles.card__green} onClick={() => onSelect(subject)}>
         <div className={styles.card__green__content}>
           <span className={styles.text__green}>{subject.name}</span>
           <span className={styles.p__green}>{subject.description}</span>
@@ -29,7 +29,7 @@ const subjId = subject.id
     )
   } else if (subjId % 6 === 3) {
     return (
-      <div className={styles.card__black}>
+      <div className={styles.card__black} onClick={() => onSelect(subject)}>
         <div className={styles.card__black__content}>
           <span className={styles.text__black}>{subject.name}</span>
           <span className={styles.p__black}>{subject.description}</span>
@@ -40,7 +40,7 @@ const subjId = subject.id
       )
   } else if (subjId % 6 === 4) {
     return (
-      <div className={styles.card__green}>
+      <div className={styles.card__green} onClick={() => onSelect(subject)}>
         <div className={styles.card__green__content}>
           <span className={styles.text__green}>{subject.name}</span>
           <span className={styles.p__green}>{subject.description}</span>
@@ -51,7 +51,7 @@ const subjId = subject.id
     )
   } else if (subjId % 6 === 5) {
     return (
-      <div className={styles.card__black}>
+      <div className={styles.card__black} onClick={() => onSelect(subject)}>
         <div className={styles.card__black__content}>
           <span className={styles.text__black}>{subject.name}</span>
           <span className={styles.p__black}>{subject.description}</span>
