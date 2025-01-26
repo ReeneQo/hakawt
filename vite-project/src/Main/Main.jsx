@@ -87,11 +87,12 @@ export function Main() {
               {selectedCourse && (
                 <div className={styles.subjectsgrid}>
                   {selectedCourse.subjects.map((subject) => (
+        
                     <SubjectCard
                       key={subject.id}
                       subject={subject}
                       onSelect={setSelectedSubject}
-                    />
+                    /> 
                   ))}
                 </div>
               )}

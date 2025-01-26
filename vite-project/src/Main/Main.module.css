@@ -10,6 +10,7 @@
         margin-bottom: 10px; 
     }
 }
+
 h1{
 
     font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
@@ -23,16 +24,19 @@ h1{
 
 .main_text{
     font-weight: 400;
-    font-size: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+    font-size: 32px;
     line-height: 140%;
     font-family: 'Space Grotesk';
     margin: 0;
     transition: 0.3s;
+    text-wrap: pretty;
 }
 
 .main_container{
     margin-left: 5.5%;
+
 }
+
 .text_container{
     min-width: 300px;
     max-width: 500px;
@@ -59,6 +63,22 @@ h1{
     gap: 20px;
 }
 
+@media (min-width: 2000px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+        gap: 20px;
+    }
+}
+
 @media (max-width: 1200px) {
     .button_course {
         width: 350px;
@@ -77,6 +97,10 @@ h1{
         flex-direction: column;
     }
 
+    .main_text{
+        font-size: 28px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -85,6 +109,11 @@ h1{
         height: 80px;
         font-size: 22px;
     }
+
+    .main_text{
+        font-size: 24px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -93,6 +122,11 @@ h1{
         height: 60px;
         font-size: 20px;
     }
+
+    .main_text{
+        font-size: 22px;
+    }
+
 }
 
 @media (max-width: 400px) {
