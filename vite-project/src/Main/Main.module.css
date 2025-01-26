@@ -1,12 +1,19 @@
-.main{
+.main {
     min-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 5%;
+    margin-bottom: 5vw; 
 }
 
+@media (max-width: 300px) {
+    .main {
+        margin-bottom: 10px; 
+    }
+}
 h1{
+
     font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
     font-weight: 500;
     padding-bottom: 30px;
@@ -34,29 +41,117 @@ h1{
 
 .button_course{
     border-radius: 14px;
-    padding: 20px 35px;
-    width: 264px;
-    height: 68px;
+    padding: 30px 50px; 
+    width: 400px; 
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #191A23;
     color: #ffffff;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 28px; 
     line-height: 140%;
 }
 
+.subjectsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+}
+
+@media (max-width: 1800px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 550px);
+    }
+}
+
+@media (max-width: 1700px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+    }
+}
+
+@media (max-width: 1600px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 450px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .button_course {
+        width: 350px;
+        height: 100px;
+        font-size: 25px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subjectsgrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .button_course {
+        width: 300px;
+        height: 80px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button_course {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .button_course {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
 .main__image {
     display: flex;
-    align-items: center;
-    transition: 0.3s;
+    justify-content: right;
+    width: 950px;
+    height: 650px;
 }
 
 .image_main{
-    width: 100%;
-    max-width: 700px;
-    height: 650px;
+    width: 100%; 
     min-width: 500px;
     min-height: 450px;
+}
+
+@media (max-width: 1199px) {
+    .main__image {
+        display: none;
+    }
 }

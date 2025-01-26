@@ -1,8 +1,5 @@
-import styles from './Card.module.css'
-
-
 const CardsTemp = () => {
-    return (
+    return ( 
     <div className={styles.card__main}>
 
       <div className={styles.card}>

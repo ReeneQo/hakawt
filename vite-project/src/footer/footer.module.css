@@ -10,6 +10,9 @@
     margin-top: 100px;
     width: 100%;
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form_email {
@@ -17,17 +20,18 @@
     border-radius: 10px;
     background-color: #292A32;
     height: 150px;
-    width: 500px;
-    margin: 50px;
+    width: 80%; 
+    margin: 50px auto; 
   }
 
   .footer_h3 {
     background-color: #b9ff66;
     color: black;
-    width: 50%;
+    width: 80%; 
     font-size: 20px;
     padding: 5px;
     border-radius: 5px;
+    margin: 0 auto; 
   }
 
   .form_copyright {
@@ -48,6 +52,54 @@
   .footer_flexbox {
      display: flex;
      justify-content: space-between;
-     max-width: 1200px;
+     justify-content: center;
+     width: 100%;
+     border-bottom: 2px solid white;
   }
-  
+
+@media (max-width: 1200px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .footer_h3 {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 867px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .footer_h3 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .form_text {
+    flex-direction: column;
+  }
+  .form_text {
+    gap: 10px;
+  }
+  .p {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_flexbox {
+    flex-direction: column;
+  }
+  .footer_h3 {
+    width: 98%;
+    justify-content: center;
+  }
+  .form_text {
+    flex-direction: column;
+  }
+  .footer_main {
+    margin-top: 50px;
+  }
+}
