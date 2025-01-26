@@ -64,6 +64,11 @@
     width: 200px;
     display: flex;
     justify-content: center;
+    margin: 0;
+  }
+  .form_text{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -95,7 +100,7 @@
     flex-direction: column;
   }
   .footer_h3 {
-    width: 98%;
+    width: 50%;
     justify-content: center;
   }
   .form_text {
