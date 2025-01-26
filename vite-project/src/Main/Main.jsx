@@ -47,7 +47,8 @@ export function Main() {
   return (
     <div>
       <section className={styles.main}>
-        <div className={styles.main_conteiner}>
+        <div className={styles.main_container}>
+          <div className={styles.text_container}>
           <h1 className={styles.h1}>
             На нашем сайте вы можете выбрать курс обучения и получить материалы
             по предметам.
@@ -58,6 +59,7 @@ export function Main() {
             профессиональной среде. Выбирайте предметы, которые соответствуют
             вашим интересам и целям!
           </p>
+          </div>
           {(selectedSubject || selectedTopic) && (
             <BackButton onClick={handleBack} />
           )}
@@ -90,10 +92,12 @@ export function Main() {
           )}
 
           {selectedSubject && !selectedTopic && (
+            <div className={styles.topic_container}>
             <TopicsList
               subject={selectedSubject}
               onSelectTopic={setSelectedTopic}
             />
+            </div>
           )}
 
           {selectedTopic && (
