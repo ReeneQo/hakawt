@@ -81,8 +81,8 @@ var isStudent = true;
         ]
       },
       {
-        id: 2,
-        name: "Математический анализ",
+        id: 3,
+        name: "Обществознание",
         description: "Высшая математика и calculus",
         credits: 5,
         topics: [
@@ -102,8 +102,8 @@ var isStudent = true;
         ]
       },
       {
-        id: 2,
-        name: "Математический анализ",
+        id: 4,
+        name: "История",
         description: "Высшая математика и calculus",
         credits: 5,
         topics: [
@@ -123,8 +123,8 @@ var isStudent = true;
         ]
       },
       {
-        id: 2,
-        name: "Математический анализ",
+        id: 5,
+        name: "Русский язык",
         description: "Высшая математика и calculus",
         credits: 5,
         topics: [
@@ -144,9 +144,9 @@ var isStudent = true;
         ]
       },
       {
-        id: 2,
-        name: "Математический анализ",
-        description: "Высшая математика и calculus",
+        id: 6,
+        name: "Литература",
+        description: "gfgfgflus",
         credits: 5,
         topics: [
           {

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+.card__white__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 18px;
+    font-family: 'Space Grotesk';
+}
+
+.card {
+    width: 550px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 3px 1px black;
+    background-color: #F3F3F3;
+    transform: scale(1);
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.card1 {
+    width: 550px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 3px 1px black;
+    background-color: #F3F3F3;
+    transform: scale(1);
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.text {
+    width: fit-content;
+    background: #B9FF66;
+    font-size: 30px;
+    max-width: 300px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.p {
+    width: fit-content;
+    font-size: 17px;
+    white-space: pre;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.white_target {
+    width: 40px;
+}
+
+.white__image {
+    height: 120px;
+    margin-right: 10px;
+}
+
+.span__white {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 30px 0 0 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card__black {
+    background: #191A23;
+    width: 550px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 3px 1px black;
+    transform: scale(1);
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.card__black:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.card__black__content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 18px;
+    font-family: 'Space Grotesk';
+}
+
+.text__black {   
+    width: fit-content;
+    background: white;
+    font-size: 30px;
+    max-width: 300px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.p__black {
+    width: fit-content;
+    font-size: 17px;
+    white-space: pre;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.span__black {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.target {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    height: 70px;
+}
+
+.black_target {
+    margin-top: 37px;
+}
+
+.black__image {
+    margin: 0 20px;
+}
+
+.card__green {
+    background: #B9FF66;
+    width: 550px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 0px 3px 1px black;
+    transform: scale(1);
+    transition: transform 0.2s;
+    margin: 20px 0 20px 0;
+}
+
+.card__green:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.card__green__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 18px;
+    font-family: 'Space Grotesk';
+}
+
+.text__green {
+    width: fit-content;
+    background: white;
+    font-size: 30px;
+    max-width: 300px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.p__green {
+    width: fit-content;
+    font-size: 17px;
+    white-space: pre;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.white_target {
+    width: 40px;
+}
+
+.span__green {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 30px 0 0 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.green__image {
+    height: 120px;
+    margin-right: 10px;
+}
+

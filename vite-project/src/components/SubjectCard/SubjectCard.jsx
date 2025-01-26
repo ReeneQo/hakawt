@@ -1,26 +1,76 @@
 import React from 'react';
-import { Book } from 'lucide-react';
-import styles from './SubjectCard.module.css';
+import { CircleArrowRight } from 'lucide-react';
+import styles from './Card.module.css'
 
 
 export const SubjectCard = ({ subject, onSelect }) => {
-  return ( 
-    <div>
-    <div className={styles.subject_card}>
-      <div className={styles.subject_header}>
-        <Book className={styles.subject_icon} />
-        <h3 className={styles.subject_title}>{subject.name}</h3>
+const subjId = subject.id
+  if (subjId % 6 === 1) {
+    return (
+      <div className={styles.card1} onClick={() => onSelect(subject)}>
+        <div className={styles.card__white__content}>
+            <span className={styles.text}>{subject.name}</span>
+            <span className={styles.p}>{subject.description}</span>
+            <span className={styles.span__white}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
+        </div>
+        <img className={styles.white__image} src='/first.svg' width={150}></img>
       </div>
-      <p className={styles.subject_description}>{subject.description}</p>
-      <div className={styles.subject_footer}>
-        <button 
-          onClick={() => onSelect(subject)}
-          className={styles.subject_button}
-        >
-          Темы
-        </button>
+    )
+  } else if (subjId % 6 === 2) {
+    return (
+      <div className={styles.card__green}>
+        <div className={styles.card__green__content}>
+          <span className={styles.text__green}>{subject.name}</span>
+          <span className={styles.p__green}>{subject.description}</span>
+          <span className={styles.span__green}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
+        </div>
+        <img className={styles.green__image} src='/second.svg' width={150}></img>
       </div>
-    </div>
-    </div>
-  );
+    )
+  } else if (subjId % 6 === 3) {
+    return (
+      <div className={styles.card__black}>
+        <div className={styles.card__black__content}>
+          <span className={styles.text__black}>{subject.name}</span>
+          <span className={styles.p__black}>{subject.description}</span>
+          <span className={styles.span__black}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
+        </div>
+        <img className={styles.black__image} src='/third.svg' width={150}></img>
+      </div> 
+      )
+  } else if (subjId % 6 === 4) {
+    return (
+      <div className={styles.card__green}>
+        <div className={styles.card__green__content}>
+          <span className={styles.text__green}>{subject.name}</span>
+          <span className={styles.p__green}>{subject.description}</span>
+          <span className={styles.span__green}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
+        </div>
+        <img className={styles.green__image} src='/second.svg' width={150}></img>
+      </div>
+    )
+  } else if (subjId % 6 === 5) {
+    return (
+      <div className={styles.card__black}>
+        <div className={styles.card__black__content}>
+          <span className={styles.text__black}>{subject.name}</span>
+          <span className={styles.p__black}>{subject.description}</span>
+          <span className={styles.span__black}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
+        </div>
+        <img className={styles.black__image} src='/third.svg' width={150}></img>
+      </div> 
+      )
+  } else if (subjId % 6 === 0) {
+    return (
+      <div className={styles.card} onClick={() => onSelect(subject)}>
+        <div className={styles.card__white__content}>
+          <span className={styles.text}>{subject.name}</span>
+          <span className={styles.p}>{subject.description}</span>
+          <span className={styles.span__white}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
+        </div>
+        <img className={styles.white__image} src='/first.svg' width={150}></img>
+      </div>
+    )
+  }
+
 };
