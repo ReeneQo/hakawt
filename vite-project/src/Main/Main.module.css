@@ -63,6 +63,22 @@ h1{
     gap: 20px;
 }
 
+@media (min-width: 2000px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .subjectsgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+        gap: 20px;
+    }
+}
+
 @media (max-width: 1200px) {
     .button_course {
         width: 350px;
