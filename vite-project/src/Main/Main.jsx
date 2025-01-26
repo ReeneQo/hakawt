@@ -65,7 +65,7 @@ export function Main() {
           <img className={styles.image_main} src="Illustration.svg" alt="" width={950} />
         </div>
       </section>
-      <section>
+      <section className={styles.ButtonSection}>
       {(selectedSubject || selectedTopic) && (
             <BackButton onClick={handleBack} />
           )}

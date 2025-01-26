@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     margin-right: 5%;
-    margin-bottom: 5vw; 
 }
 
 @media (max-width: 300px) {
@@ -28,7 +27,6 @@ h1{
     line-height: 140%;
     font-family: 'Space Grotesk';
     margin: 0;
-    padding-bottom: 30px;
     transition: 0.3s;
 }
 
@@ -57,42 +55,8 @@ h1{
 
 .subjectsgrid {
     display: grid;
-    grid-template-columns: repeat(3, 600px);
-}
-
-@media (max-width: 1800px) {
-    .subjectsgrid {
-        display: grid;
-        grid-template-columns: repeat(3, 550px);
-    }
-}
-
-@media (max-width: 1700px) {
-    .subjectsgrid {
-        display: grid;
-        grid-template-columns: repeat(3, 500px);
-    }
-}
-
-@media (max-width: 1600px) {
-    .subjectsgrid {
-        display: grid;
-        grid-template-columns: repeat(3, 450px);
-    }
-}
-
-@media (max-width: 1400px) {
-    .subjectsgrid {
-        display: grid;
-        grid-template-columns: repeat(3, 400px);
-    }
-}
-
-@media (max-width: 1400px) {
-    .subjectsgrid {
-        display: grid;
-        grid-template-columns: repeat(3, 380px);
-    }
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -155,4 +119,15 @@ h1{
     .main__image {
         display: none;
     }
+
+    .ButtonSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.ButtonSection {
+    margin: 20px 6% 20px 5%;
 }
