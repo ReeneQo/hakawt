@@ -13,7 +13,7 @@ const subjId = subject.id
             <span className={styles.p}>{subject.description}</span>
             <span className={styles.span__white}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
         </div>
-        <img className={styles.white__image} src='/first.svg' width={150}></img>
+        <img className={styles.img} src='/first.svg' width={150}></img>
       </div>
     )
   } else if (subjId % 6 === 2) {
@@ -24,7 +24,7 @@ const subjId = subject.id
           <span className={styles.p__green}>{subject.description}</span>
           <span className={styles.span__green}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
         </div>
-        <img className={styles.green__image} src='/second.svg' width={150}></img>
+        <img className={styles.img} src='/second.svg' width={150}></img>
       </div>
     )
   } else if (subjId % 6 === 3) {
@@ -35,7 +35,7 @@ const subjId = subject.id
           <span className={styles.p__black}>{subject.description}</span>
           <span className={styles.span__black}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
         </div>
-        <img className={styles.black__image} src='/third.svg' width={150}></img>
+        <img className={styles.img} src='/third.svg' width={150}></img>
       </div> 
       )
   } else if (subjId % 6 === 4) {
@@ -46,7 +46,7 @@ const subjId = subject.id
           <span className={styles.p__green}>{subject.description}</span>
           <span className={styles.span__green}> <CircleArrowRight className={styles.white_target} /> Learn more</span>
         </div>
-        <img className={styles.green__image} src='/second.svg' width={150}></img>
+        <img className={styles.img} src='/second.svg' width={150}></img>
       </div>
     )
   } else if (subjId % 6 === 5) {
@@ -57,7 +57,7 @@ const subjId = subject.id
           <span className={styles.p__black}>{subject.description}</span>
           <span className={styles.span__black}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
         </div>
-        <img className={styles.black__image} src='/third.svg' width={150}></img>
+        <img className={styles.img} src='/third.svg' width={150}></img>
       </div> 
       )
   } else if (subjId % 6 === 0) {
@@ -68,7 +68,7 @@ const subjId = subject.id
           <span className={styles.p}>{subject.description}</span>
           <span className={styles.span__white}> <CircleArrowRight className={styles.white_target}/>Learn more</span>
         </div>
-        <img className={styles.white__image} src='/first.svg' width={150}></img>
+        <img className={styles.img} src='/first.svg' width={150}></img>
       </div>
     )
   }
