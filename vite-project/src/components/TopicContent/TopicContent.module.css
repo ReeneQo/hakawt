@@ -79,3 +79,23 @@
   white-space: pre-wrap;
   font-family: system-ui, -apple-system, sans-serif;
 }
+.content_link {
+  color: #4f46e5;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.code-block {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  color: #1f2937;
+}

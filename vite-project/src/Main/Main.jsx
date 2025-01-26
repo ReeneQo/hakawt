@@ -5,6 +5,7 @@ import { SubjectCard } from "../components/SubjectCard/SubjectCard.jsx";
 import { TopicsList } from "../components/TopicsList/TopicsList.jsx";
 import { TopicContent } from "../components/TopicContent/TopicContent.jsx";
 import { courses } from "../data/courses";
+import { extractHeadings } from '../utils/content';
 import React, { useState, useMemo } from 'react';
 
 export function Main() {
