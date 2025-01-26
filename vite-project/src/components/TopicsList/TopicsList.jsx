@@ -4,6 +4,7 @@ import styles from './TopicsList.module.css';
 
 export const TopicsList = ({ subject, onSelectTopic }) => {
   return (
+    <div className={styles.topics_container}>
       <div className={styles.topics_card}>
         <div className={styles.topics_header}>
           <BookOpen className={styles.topics_icon} />
@@ -24,5 +25,6 @@ export const TopicsList = ({ subject, onSelectTopic }) => {
           ))}
         </div>
       </div>
+    </div>
   );
 };
