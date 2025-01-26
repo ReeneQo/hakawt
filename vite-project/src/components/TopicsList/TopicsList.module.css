@@ -4,6 +4,7 @@
 }
 
 .topics_card {
+  display: flex;
   width: 100%;
   background-color: white;
   border-radius: 0.5rem;
@@ -60,6 +61,7 @@
   height: 1.25rem;
   color: black;
   margin-right: 0.75rem;
+  flex-shrink: 0;
 }
 
 .topic_title {

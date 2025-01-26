@@ -60,7 +60,13 @@ export function Main() {
             вашим интересам и целям!
           </p>
           </div>
-          {(selectedSubject || selectedTopic) && (
+        </div>
+        <div className={styles.main__image}>
+          <img className={styles.image_main} src="Illustration.svg" alt="" width={950} />
+        </div>
+      </section>
+      <section>
+      {(selectedSubject || selectedTopic) && (
             <BackButton onClick={handleBack} />
           )}
 
@@ -109,10 +115,6 @@ export function Main() {
               onHeadingClick={scrollToHeading}
             />
           )}
-        </div>
-        <div className={styles.main__image}>
-          <img className={styles.image_main} src="Illustration.svg" alt="" width={950} />
-        </div>
       </section>
     </div>
   );
