@@ -30,7 +30,7 @@ const Developers = () => {
                     <button className={styles.git_button} onClick={() => window.open('https://github.com/ReeneQo', '_blank')}><Github/></button>
                 </div>
             <hr></hr>
-            <span className={styles.spanText}>Мое знакомство с программированием началось в 2021 первом году, а встреча с самой лучшей девочкой на свете произошла в 5 классе и с того момента я каждый день думал о ней, у нее невероятно красивые глаза, что я просто тону в них, will you mary me:?</span>
+            <span className={styles.spanText}></span>
        </div>
        
        <div className={styles.card_main}>
@@ -40,7 +40,7 @@ const Developers = () => {
                     <button className={styles.git_button} onClick={() => window.open('https://github.com/ierumi', '_blank')}><Github/></button>
                 </div>
             <hr></hr>
-            <span className={styles.spanText}>Моё знакомство с программированием началось с желания создавать и прогрессировать в своих навыках. Я начал с изучения HTML, CSS и JavaScript и оно меня быстро увлекло. Теперь я стремлюсь к новым знаниям и карьерному росту, превращая идеи в реальность.</span>
+            <span className={styles.spanText}>Написал хуевый футер</span>
         </div>
 
        </div>

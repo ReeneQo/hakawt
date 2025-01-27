@@ -1,5 +1,4 @@
 import React from 'react';
-import { Search } from 'lucide-react';
 import { renderContent } from '../../utils/content';
 import styles from './TopicContent.module.css';
 
@@ -14,10 +13,9 @@ export const TopicContent = ({
     <div className={styles.content_container}>
       <div className={styles.search_container}>
         <div className={styles.search_input_wrapper}>
-          <Search className={styles.search_icon} />
           <input
             type="text"
-            placeholder="Поиск по подтемам..."
+            placeholder=" Поиск по подтемам..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             className={styles.search_input}
@@ -33,7 +31,7 @@ export const TopicContent = ({
               >
                 <span className={styles.search_result_hash}>{'#'.repeat(heading.level)}</span>{' '}
                 {heading.text}
-              </button>
+              </button> 
             ))}
           </div>
         )}
