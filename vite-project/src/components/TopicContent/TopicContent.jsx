@@ -11,27 +11,27 @@ export const TopicContent = ({
   onHeadingClick,
 }) => {
   return (
-    <div className="content_container">
-      <div className="search_container">
-        <div className="search_input_wrapper">
-          <Search className="search_icon"/>
+    <div className="content-container">
+      <div className="search-container">
+        <div className="search-input-wrapper">
+          <Search className="search-icon" />
           <input
             type="text"
             placeholder="Поиск по подтемам..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="search_input"
+            className="search-input"
           />
         </div>
         {searchQuery && (
-          <div className="search_results">
+          <div className="search-results">
             {filteredHeadings.map((heading, index) => (
               <button
                 key={index}
                 onClick={() => onHeadingClick(heading.text)}
-                className="search_result_item"
+                className="search-result-item"
               >
-                <span className="search_result_hash">{'#'.repeat(heading.level)}</span>{' '}
+                <span className="search-result-hash">{'#'.repeat(heading.level)}</span>{' '}
                 {heading.text}
               </button>
             ))}
@@ -39,10 +39,10 @@ export const TopicContent = ({
         )}
       </div>
       
-      <div className="content_wrapper">
-        <div className="styles.content_text">
+      <div className="content-wrapper">
+        <div className="content-text">
           <div 
-            className="styles.content_body"
+            className="content-body"
             dangerouslySetInnerHTML={{ __html: renderContent(topic.content) }}
           />
         </div>
