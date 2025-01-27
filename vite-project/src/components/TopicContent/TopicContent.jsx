@@ -1,6 +1,7 @@
 import React from 'react';
+import { Search } from 'lucide-react';
 import { renderContent } from '../../utils/content';
-import styles from './TopicContent.module.css';
+import  './TopicContent.css';
 
 export const TopicContent = ({
   topic,
@@ -10,37 +11,38 @@ export const TopicContent = ({
   onHeadingClick,
 }) => {
   return (
-    <div className={styles.content_container}>
-      <div className={styles.search_container}>
-        <div className={styles.search_input_wrapper}>
+    <div className="content_container">
+      <div className="search_container">
+        <div className="search_input_wrapper">
+          <Search className="search_icon"/>
           <input
             type="text"
-            placeholder=" Поиск по подтемам..."
+            placeholder="Поиск по подтемам..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className={styles.search_input}
+            className="search_input"
           />
         </div>
         {searchQuery && (
-          <div className={styles.search_results}>
+          <div className="search_results">
             {filteredHeadings.map((heading, index) => (
               <button
                 key={index}
                 onClick={() => onHeadingClick(heading.text)}
-                className={styles.search_result_item}
+                className="search_result_item"
               >
-                <span className={styles.search_result_hash}>{'#'.repeat(heading.level)}</span>{' '}
+                <span className="search_result_hash">{'#'.repeat(heading.level)}</span>{' '}
                 {heading.text}
-              </button> 
+              </button>
             ))}
           </div>
         )}
       </div>
       
-      <div className={styles.content_wrapper}>
-        <div className={styles.content_text}>
+      <div className="content_wrapper">
+        <div className="styles.content_text">
           <div 
-            className={styles.content_body}
+            className="styles.content_body"
             dangerouslySetInnerHTML={{ __html: renderContent(topic.content) }}
           />
         </div>
