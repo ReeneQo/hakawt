@@ -9,7 +9,6 @@ const Developers = () => {
         <main>
         <Header/>
     <div className={styles.card_general}>
-
         <div className={styles.card_container}>
 
             <div className={styles.card_main}>

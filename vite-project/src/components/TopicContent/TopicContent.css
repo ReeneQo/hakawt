@@ -79,23 +79,39 @@
   white-space: pre-wrap;
   font-family: system-ui, -apple-system, sans-serif;
 }
-.content_link {
+.content-link {
   color: #4f46e5;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s;
 }
 
+.content-link:hover {
+  border-bottom-color: #4f46e5;
+}
+
 .code-block {
   background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem 0;
   overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  white-space: pre;
 }
 
-.code-block code {
-  font-family: ui-monospace, monospace;
-  font-size: 0.9em;
-  color: #1f2937;
+.code-block.html {
+  background-color: #fffbeb;
+  border-color: #fcd34d;
+}
+
+.inline-code {
+  background-color: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
 }

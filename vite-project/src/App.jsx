@@ -10,7 +10,7 @@ import { TopicContent } from './components/TopicContent/TopicContent.jsx';
 export function App() {
 
   return (
-    <div>
+    <>
       <Router>
         <Routes>
           <Route path="/" element={<PageTransition><Home /></PageTransition>} />
@@ -18,6 +18,6 @@ export function App() {
           <Route path="/Developers" element={<PageTransition><Developers /></PageTransition>} />
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }

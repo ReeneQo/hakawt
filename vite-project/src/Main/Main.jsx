@@ -46,7 +46,7 @@ export function Main() {
   };
 
   return (
-    <div>
+    <>
       <section className={styles.main}>
         <div className={styles.main_container}>
           <div className={styles.text_container}>
@@ -118,6 +118,6 @@ export function Main() {
             />
           )}
       </section>
-    </div>
+    </>
   );
 }

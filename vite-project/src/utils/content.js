@@ -22,17 +22,30 @@ export const renderContent = (content) => {
     );
   });
 
-  // Обработка ссылок в формате [текст](url)
-  processedContent = processedContent.replace(
-    /\[([^\]]+)\]\(([^)]+)\)/g,
-    '<a href="$2" target="_blank" rel="noopener noreferrer" class={content_link}>$1</a>'
-  );
+    processedContent = processedContent.replace(
+      /```html([\s\S]*?)```/g,
+      (_, code) => `<pre class="code-block html"><code>${
+        code.trim()
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+      }</code></pre>`
+    );
+  
 
-  // Обработка кода
-  processedContent = processedContent.replace(
-    /```([^`]+)```/g,
-    '<pre class="code_block"><code>$1</code></pre>'
-  );
+    processedContent = processedContent.replace(
+      /```(\w+)?([\s\S]*?)```/g,
+      (_, lang, code) => `<pre class="code-block ${lang || ''}"><code>${code.trim()}</code></pre>`
+    );
+  
+    processedContent = processedContent.replace(
+      /`([^`]+)`/g,
+      '<code class="inline-code">$1</code>'
+    );
+  
+    processedContent = processedContent.replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer" class="content-link">$1</a>'
+    );
   
   return processedContent;
 };
