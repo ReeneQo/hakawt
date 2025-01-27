@@ -29,8 +29,7 @@ export const TopicContent = ({
               <button
                 key={index}
                 onClick={() => onHeadingClick(heading.text)}
-                className="search-result-item"
-              >
+                className="search-result-item">
                 <span className="search-result-hash">{'#'.repeat(heading.level)}</span>{' '}
                 {heading.text}
               </button>
@@ -38,7 +37,6 @@ export const TopicContent = ({
           </div>
         )}
       </div>
-      
       <div className="content-wrapper">
         <div className="content-text">
           <div 

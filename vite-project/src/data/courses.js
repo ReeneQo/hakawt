@@ -13,23 +13,23 @@ export const courses = [
             title: "Введение в HTML",
             content: `# Переменные и типы данных
 
-            ## Основные типы данных:
-            - Целые числа (int)
-            - Числа с плавающей точкой (float)
-            - Строки (string)
-            - Логические значения (boolean)
+## Основные типы данных:
+- Целые числа (int)
+- Числа с плавающей точкой (float)
+- Строки (string)
+- Логические значения (boolean)
             
-            ## Объявление переменных:
-            \`\`\`javascript
-            let age = 25;
-            const name = "Иван";
-            var isStudent = true;
-            \`\`\`
+## Объявление переменных:
+\`\`\`javascript
+let age = 25;
+const name = "Иван";
+var isStudent = true;
+\`\`\`
             
-            ## Примеры HTML-кода:
+## Примеры HTML-кода:
             
-            ### Простая форма:
-            \`\`\`html
+### Простая форма:
+\`\`\`html
 <form class="login-form">
     <div class="form-group">
           <label for="username">Имя пользователя:</label>
@@ -41,28 +41,26 @@ export const courses = [
           </div> 
           <button type="submit">Войти</button>
 </form>
-            \`\`\`
+\`\`\`
             
-            ### Навигационное меню:
-            \`\`\`html
-            <nav class="main-nav">
-              <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
-              </ul>
-            </nav>
-            \`\`\`
+### Навигационное меню:
+\`\`\`html
+<nav class="main-nav">
+  <ul>
+    <li><a href="#about">О нас</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+</nav>
+\`\`\`
             
-            ### Полезные ресурсы
-            - [MDN: Типы данных JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-            - [JavaScript.info](https://javascript.info/types)
+### Полезные ресурсы
+- [MDN: Типы данных JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+- [JavaScript.info](https://javascript.info/types)
             
-            ### Правила именования переменных:
-            1. Используйте осмысленные имена
-            2. Начинайте с буквы
-            3. Используйте camelCase
-            4. Избегайте зарезервированных слов`
+### Правила именования переменных:
+2. Начинайте с буквы
+3. Используйте camelCase
+4. Избегайте зарезервированных слов`
           }, 
           {
             id: 113,
