@@ -8,6 +8,7 @@ import { courses } from "../data/courses";
 import { extractHeadings } from '../utils/content';
 import React, { useState, useMemo } from 'react';
 
+
 export function Main() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -83,19 +84,15 @@ export function Main() {
                   setIsOpen(false);
                 }}
               />
-
-              {selectedCourse && (
-                <div className={styles.subjectsgrid}>
+              {selectedCourse && (   
+                  <div className={styles.subjectsgrid}>
                   {selectedCourse.subjects.map((subject) => (
-        
-                    <SubjectCard
-                      key={subject.id}
-                      subject={subject}
-                      onSelect={setSelectedSubject}
-                    /> 
-                  ))}
-                </div>
-              )}
+                 <SubjectCard key={subject.id}
+                subject={subject} 
+                onSelect={setSelectedSubject} 
+              /> ))} 
+            </div>
+              )} 
             </>
           )}
 

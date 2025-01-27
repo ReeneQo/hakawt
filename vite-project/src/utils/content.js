@@ -30,7 +30,7 @@ export const renderContent = (content) => {
 
   // Обработка кода
   processedContent = processedContent.replace(
-    /```([^`]+)```/g,
+    /```([^`<>]+)```/g,
     '<pre class="code_block"><code>$1</code></pre>'
   );
   

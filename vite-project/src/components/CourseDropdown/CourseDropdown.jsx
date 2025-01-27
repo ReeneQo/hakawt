@@ -16,7 +16,7 @@ export const CourseDropdown = ({
         </span>
         <ArrowDown className={`${styles.ArrowVniz} ${isOpen ? styles.ArrowVverx: ''}`}/>
       </button>
-
+ 
       {isOpen && (
         <div className={styles.dropdown_menu}>
           {courses.map((course) => (
