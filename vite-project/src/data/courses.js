@@ -882,8 +882,8 @@ var isStudent = true;
     subjects: [
       {
         id: 409,
-        name: "Микроэкономика",
-        description: "Основы экономической теории",
+        name: "Иностранный язык в профессиональной деятельности",
+        description: "Основы",
         topics: [
           {
             id: 4101,
