@@ -11,37 +11,58 @@ export const courses = [
           {
             id: 101,
             title: "Введение в HTML",
-            content:  `#1. Введение в HTML
-#Что такое HTML
-#HTML (HyperText Markup Language) — это язык разметки, который используется для создания структуры веб-страниц. С его помощью мы можем добавлять текст, изображения, ссылки, видео и другие элементы на веб-страницы. HTML не является языком программирования — он отвечает только за разметку и структуру.
+            content: `# Переменные и типы данных
 
-
-
-#Структура HTML-документа
-#Основные теги, которые используются для создания страницы, обязательны для всех HTML-документов:
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Заголовок страницы</title>
-</head>
-<body>
-  <!-- Здесь будет содержимое страницы -->
-</body>
-</html>
-
-#2. Основные теги HTML
-#Заголовки и параграфы
-
-Для структурирования текста на странице используются заголовки и параграфы. Заголовки в HTML бывают шести уровней от <h1> до <h6>, где <h1> — самый важный заголовок.
-\`\`\
-#<h1>Главный заголовок</h1>
-#<h2>Подзаголовок</h2>
-#<p>Это абзац текста. 
-Параграфы позволяют разбивать текст на блоки для лучшего восприятия.</p>
-\`\`\
-` 
+            ## Основные типы данных:
+            - Целые числа (int)
+            - Числа с плавающей точкой (float)
+            - Строки (string)
+            - Логические значения (boolean)
+            
+            ## Объявление переменных:
+            \`\`\`javascript
+            let age = 25;
+            const name = "Иван";
+            var isStudent = true;
+            \`\`\`
+            
+            ## Примеры HTML-кода:
+            
+            ### Простая форма:
+            \`\`\`html
+<form class="login-form">
+    <div class="form-group">
+          <label for="username">Имя пользователя:</label>
+          <input type="text" id="username" name="username" required>
+    </div>    
+          <div class="form-group">
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" name="password" required>
+          </div> 
+          <button type="submit">Войти</button>
+</form>
+            \`\`\`
+            
+            ### Навигационное меню:
+            \`\`\`html
+            <nav class="main-nav">
+              <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+            </nav>
+            \`\`\`
+            
+            ### Полезные ресурсы
+            - [MDN: Типы данных JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+            - [JavaScript.info](https://javascript.info/types)
+            
+            ### Правила именования переменных:
+            1. Используйте осмысленные имена
+            2. Начинайте с буквы
+            3. Используйте camelCase
+            4. Избегайте зарезервированных слов`
           }, 
           {
             id: 113,
@@ -55,11 +76,11 @@ export const courses = [
 - Логические значения (boolean)
 
 ## Объявление переменных:
-\`\`\`javascript
+\'\'\'javascript
 let age = 25;
 const name = "Иван";
 var isStudent = true;
-\`\`\`
+\'\'\'
 
 ### Правила именования переменных:
 1. Используйте осмысленные имена
@@ -477,5 +498,4 @@ var isStudent = true;
       
     ]
   },
-  
 ];
